@@ -87,7 +87,7 @@ DATABASES = {
         "USER": str(os.getenv("POSTGRES_USER")),
         "PASSWORD": str(os.getenv("POSTGRES_PASSWORD")),
         "HOST": str(os.getenv("POSTGRES_HOST")),
-        "PORT": int(os.getenv("POSTGRES_HOST")),
+        "PORT": int(os.getenv("POSTGRES_PORT")),
     }
 }
 
@@ -126,6 +126,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
