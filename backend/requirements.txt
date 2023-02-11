@@ -1,0 +1,9 @@
+django
+flake8
+black
+djangorestframework
+python-dotenv
+psycopg2-binary
+python-dotenv
+pre-commit
+pillow
